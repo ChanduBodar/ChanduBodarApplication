@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="itemData"
+            type="com.chandubodar.model.Item" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_artist_name"
+            android:textSize="@dimen/_16sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@={itemData.artistName}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="@string/enter_track_name"
+            android:textSize="@dimen/_16sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@={itemData.trackName}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="@string/enter_collection_name"
+            android:textSize="@dimen/_16sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_collection_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@={itemData.collectionName}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="@string/enter_collection_price"
+            android:textSize="@dimen/_16sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_collection_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:text="@={itemData.collectionPrice}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20sp" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/colorAccent"
+            android:text="Search Album"
+            android:textColor="@android:color/white">
+
+        </Button>
+    </LinearLayout>
+</layout>

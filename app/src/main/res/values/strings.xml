@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ChanduBodarApplication</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_key">item</string>
+    <string name="enter_artist_name">Enter Artist Name :</string>
+    <string name="enter_track_name">Enter Track Name :</string>
+    <string name="enter_collection_name">Enter Collection Name :</string>
+    <string name="enter_collection_price">Enter Collection Price :</string>
+    <string name="str_error_msg">Please enter artist name and track name</string>
+    <string name="my_cart">My Cart</string>
+    <string name="sortList" />
+
+    <string-array name="sortList">
+        <item>Release Date</item>
+        <item>Artist Name</item>
+        <item>Track Name</item>
+    </string-array>
+</resources>
